@@ -550,6 +550,98 @@ nav {
   }
 }
 
+    
+/* TECHNICAL SKILLS & TECHNOLOGY STACK */
+.skills-section {
+  padding: 100px 0;
+}
+
+.skills-section .section-heading {
+  max-width: 850px;
+  margin: 0 auto 55px;
+  text-align: left;
+}
+
+.skills-section .eyebrow {
+  color: #60a5fa;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.skills-section .section-heading h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  margin: 14px 0;
+}
+
+.skills-section .section-heading p {
+  color: #94a3b8;
+  max-width: 650px;
+  line-height: 1.8;
+}
+
+.skills-grid {
+  max-width: 850px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 14px;
+  padding: 25px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(96, 165, 250, 0.55);
+}
+
+.skill-icon {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.skill-card h3 {
+  color: #f8fafc;
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.skill-list span {
+  color: #bfdbfe;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  border-radius: 20px;
+  padding: 7px 12px;
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  .skills-section {
+    padding: 70px 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 22px;
+  }
+}
+
+
   </style>
 </head>
 
@@ -562,6 +654,7 @@ nav {
       <a href="#about">About</a>
       <a href="#expertise">Expertise</a>
       <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </div>
@@ -705,6 +798,94 @@ nav {
       <div class="expertise-item">Technical Leadership & Governance</div>
     </div>
 
+  </div>
+</section>
+
+<section id="skills" class="skills-section">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">TECHNICAL CAPABILITIES</span>
+      <h2>Technology & Expertise</h2>
+      <p>A blend of architectural thinking, enterprise engineering and hands-on technical expertise.</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon">🏛️</div>
+        <h3>Architecture & Design</h3>
+        <div class="skill-list">
+          <span>Solution Architecture</span>
+          <span>Enterprise Architecture</span>
+          <span>Microservices</span>
+          <span>SOA</span>
+          <span>Enterprise Integration</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">⚙️</div>
+        <h3>Application Engineering</h3>
+        <div class="skill-list">
+          <span>Java</span>
+          <span>Spring</span>
+          <span>Spring Boot</span>
+          <span>Hibernate</span>
+          <span>J2EE</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🔗</div>
+        <h3>API & Integration</h3>
+        <div class="skill-list">
+          <span>Oracle Service Bus</span>
+          <span>REST APIs</span>
+          <span>SOAP Services</span>
+          <span>BPM</span>
+          <span>API Architecture</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">☁️</div>
+        <h3>Cloud & Enterprise Platforms</h3>
+        <div class="skill-list">
+          <span>Google Cloud</span>
+          <span>Azure API Management</span>
+          <span>Oracle Database</span>
+          <span>Oracle WebLogic</span>
+          <span>Cloud Platforms</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🛠️</div>
+        <h3>DevOps & Engineering Tools</h3>
+        <div class="skill-list">
+          <span>Git</span>
+          <span>GitLab</span>
+          <span>Jenkins</span>
+          <span>Postman</span>
+          <span>SOAP UI</span>
+          <span>IntelliJ IDEA</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🎯</div>
+        <h3>Delivery & Leadership</h3>
+        <div class="skill-list">
+          <span>Agile Scrum</span>
+          <span>SDLC</span>
+          <span>Technical Leadership</span>
+          <span>Stakeholder Management</span>
+          <span>Vendor Coordination</span>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
