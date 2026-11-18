@@ -686,6 +686,132 @@ nav .logo {
 }
 
 
+/* CONTACT SECTION */
+.contact-section {
+  padding: 100px 24px;
+  background: linear-gradient(180deg, #0f172a 0%, #080f1e 100%);
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.contact-section .eyebrow {
+  display: inline-block;
+  color: #60a5fa;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.contact-section h2 {
+  color: #f8fafc;
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.contact-intro {
+  max-width: 620px;
+  margin: 0 auto 42px;
+  color: #94a3b8;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 38px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 16px 20px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 12px;
+  background: rgba(30, 41, 59, 0.45);
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.contact-item:hover {
+  border-color: #3b82f6;
+  transform: translateY(-3px);
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(59, 130, 246, 0.14);
+  color: #60a5fa;
+  font-weight: 700;
+}
+
+.contact-item small {
+  display: block;
+  margin-bottom: 5px;
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.contact-item strong {
+  display: block;
+  color: #e2e8f0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 30px;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.contact-button:hover {
+  background: #3b82f6;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 75px 18px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
   </style>
 </head>
 
@@ -1029,16 +1155,61 @@ nav .logo {
   </div>
 </section>
 
-    <section class="section" id="contact">
-      <div class="section-label">Connect</div>
-      <h2>Let's Connect</h2>
+  
+<section id="contact" class="contact-section">
+  <div class="container">
 
-      <p>
-        Open to meaningful conversations around
-        enterprise architecture, integration,
-        technology strategy and digital transformation.
+    <div class="contact-content">
+      <span class="eyebrow">LET'S CONNECT</span>
+
+      <h2>Have a conversation in mind?</h2>
+
+      <p class="contact-intro">
+        Open to new opportunities, architecture discussions
+        and meaningful collaborations. Let's connect and
+        explore how technology can create lasting value.
       </p>
-    </section>
+
+      <div class="contact-details">
+
+        <a href="mailto:anoopplenin@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>
+            <small>EMAIL</small>
+            <strong>anoopplenin@gmail.com</strong>
+          </span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/anooplenin/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-item">
+          <span class="contact-icon">in</span>
+          <span>
+            <small>LINKEDIN</small>
+            <strong>Connect professionally</strong>
+          </span>
+        </a>
+
+        <div class="contact-item">
+          <span class="contact-icon">⌖</span>
+          <span>
+            <small>LOCATION</small>
+            <strong>Doha, Qatar · Open to international opportunities</strong>
+          </span>
+        </div>
+
+      </div>
+
+      <a href="mailto:anoopplenin@gmail.com?subject=Professional%20Enquiry"
+         class="contact-button">
+        Let's Talk <span>↗</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 
   </main>
 
