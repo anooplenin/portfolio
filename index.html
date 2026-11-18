@@ -664,6 +664,24 @@ nav {
   object-fit: contain;
 }
 
+.nav-logo {
+  height: 62px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.04);
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
 
   </style>
 </head>
@@ -671,7 +689,7 @@ nav {
 <body>
 
   <nav>
-    <a href="#" class="logo">ANOOP<span>.</span></a>
+   <img src="apl-logo.png" alt="APL Personal Brand Logo" class="nav-logo">
 
     <div class="nav-links">
       <a href="#about">About</a>
