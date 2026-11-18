@@ -278,6 +278,146 @@
         letter-spacing: -1px;
       }
     }
+    
+/* PROFESSIONAL EXPERIENCE TIMELINE */
+.experience-section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.experience-section .section-heading {
+  margin-bottom: 65px;
+}
+
+.experience-section .eyebrow {
+  color: #60a5fa;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.experience-section .section-heading h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  margin: 14px 0;
+}
+
+.experience-section .section-heading p {
+  color: #94a3b8;
+  max-width: 620px;
+  line-height: 1.8;
+}
+
+.timeline {
+  position: relative;
+  max-width: 850px;
+  margin: 0 auto;
+  padding-left: 35px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  background: linear-gradient(to bottom, #3b82f6, #1e293b);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 42px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -34px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #60a5fa;
+  border: 3px solid #0f172a;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25);
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(148, 163, 184, 0.13);
+  border-radius: 14px;
+  padding: 26px 30px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-4px);
+  border-color: rgba(96, 165, 250, 0.55);
+}
+
+.timeline-date {
+  color: #60a5fa;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.timeline-content h3 {
+  color: #f8fafc;
+  font-size: 21px;
+  margin: 12px 0 5px;
+}
+
+.timeline-content h4 {
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+.timeline-content p {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.timeline-tags span {
+  color: #bfdbfe;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 20px;
+  padding: 6px 11px;
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  .experience-section {
+    padding: 70px 0;
+  }
+
+  .timeline {
+    padding-left: 28px;
+  }
+
+  .timeline-dot {
+    left: -27px;
+  }
+
+  .timeline-content {
+    padding: 21px 18px;
+  }
+}
+
   </style>
 </head>
 
@@ -388,6 +528,82 @@
 
       </div>
     </section>
+
+<section id="experience" class="experience-section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">CAREER JOURNEY</span>
+      <h2>Professional Experience</h2>
+      <p>A journey of continuous growth across enterprise technology, engineering and integration.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Feb 2021 – Present</span>
+          <h3>Integration Lead (Enterprise Systems)</h3>
+          <h4>Ministry of Labour · Doha, Qatar</h4>
+          <p>Contributing to large-scale government platforms through enterprise integration, API architecture, application delivery and system modernisation.</p>
+          <div class="timeline-tags">
+            <span>Enterprise Integration</span>
+            <span>SOA & Microservices</span>
+            <span>REST & SOAP APIs</span>
+            <span>Azure APIM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Feb 2014 – Dec 2020</span>
+          <h3>Technical Lead</h3>
+          <h4>Wipro</h4>
+          <p>Led development teams delivering enterprise-scale applications, overseeing technical design, end-to-end delivery, quality and stakeholder coordination.</p>
+          <div class="timeline-tags">
+            <span>Technical Leadership</span>
+            <span>Spring</span>
+            <span>BPM</span>
+            <span>Microservices</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Feb 2011 – Jan 2014</span>
+          <h3>Development Team Lead</h3>
+          <h4>Systems Valley</h4>
+          <p>Led development teams delivering enterprise applications while managing project timelines, resource allocation and delivery quality.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Aug 2010 – Feb 2011</span>
+          <h3>Software Developer</h3>
+          <h4>DLI IT Systems India</h4>
+          <p>Contributed to software development and application delivery.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Feb 2009 – Apr 2010</span>
+          <h3>Software Programmer</h3>
+          <h4>Curvature Infosolutions</h4>
+          <p>Began professional career in software programming and application development.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <section class="section" id="contact">
       <div class="section-label">Connect</div>
