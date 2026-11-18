@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Anoop Parakkalakath - Solution Architect, Enterprise Integration and Digital Transformation professional.">
-  <title>Anoop Parakkalakath | Portfolio</title>
+
+  <meta name="description" content="Anoop Parakkalakath | Solution Architect, Enterprise Integration and Digital Transformation">
+
+  <title>Anoop Parakkalakath | Solution Architect | Integration Lead</title>
 
   <style>
     * {
@@ -14,116 +16,266 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      background: #0b1120;
+      background: #080f1d;
       color: #f8fafc;
       line-height: 1.7;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     nav {
+      height: 85px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 24px 8%;
-      border-bottom: 1px solid #263247;
+      padding: 0 9%;
+      border-bottom: 1px solid #1e293b;
     }
 
-    nav h2 {
-      letter-spacing: 1px;
-      font-size: 20px;
+    .logo {
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: white;
     }
 
-    nav a {
+    .logo span {
+      color: #60a5fa;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+    }
+
+    .nav-links a {
       color: #cbd5e1;
-      text-decoration: none;
-      margin-left: 24px;
       font-size: 14px;
+      transition: color .3s;
+    }
+
+    .nav-links a:hover {
+      color: #60a5fa;
     }
 
     .hero {
-      min-height: 75vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 80px 12%;
-      max-width: 1100px;
+      min-height: 680px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      align-items: center;
+      gap: 50px;
+      padding: 75px 12%;
+      max-width: 1500px;
+      margin: auto;
     }
 
     .eyebrow {
       color: #60a5fa;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 13px;
-      margin-bottom: 20px;
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 24px;
     }
 
     h1 {
-      font-size: clamp(42px, 7vw, 76px);
+      font-size: clamp(42px, 5vw, 68px);
       line-height: 1.12;
-      margin-bottom: 24px;
+      letter-spacing: -2px;
+      margin-bottom: 25px;
     }
 
     h1 span {
       color: #60a5fa;
     }
 
-    .intro {
-      max-width: 680px;
-      color: #94a3b8;
+    .headline {
+      color: #dbeafe;
       font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .intro {
+      color: #94a3b8;
+      font-size: 16px;
+      max-width: 570px;
       margin-bottom: 32px;
     }
 
-    .button {
-      display: inline-block;
+    .actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 13px 24px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    .primary {
       background: #2563eb;
       color: white;
-      text-decoration: none;
-      padding: 13px 25px;
-      border-radius: 6px;
-      width: fit-content;
     }
 
-    section {
-      padding: 70px 12%;
-      border-top: 1px solid #263247;
+    .primary:hover {
+      background: #3b82f6;
     }
 
-    section h2 {
-      font-size: 30px;
-      margin-bottom: 20px;
+    .secondary {
+      border: 1px solid #475569;
+      color: white;
     }
 
-    section p {
+    .secondary:hover {
+      border-color: #60a5fa;
+      color: #60a5fa;
+    }
+
+    .photo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .photo-frame {
+      width: 340px;
+      height: 420px;
+      padding: 9px;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      background: linear-gradient(145deg, #172b4d, #0b1424);
+      box-shadow: 0 25px 80px rgba(0,0,0,.45);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 7px;
+    }
+
+    .section {
+      padding: 90px 12%;
+      border-top: 1px solid #1e293b;
+    }
+
+    .section-label {
+      color: #60a5fa;
+      letter-spacing: 3px;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .section h2 {
+      font-size: 34px;
+      margin-bottom: 22px;
+    }
+
+    .section p {
       color: #94a3b8;
-      max-width: 750px;
+      max-width: 780px;
+    }
+
+    .expertise {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 35px;
+    }
+
+    .expertise-card {
+      background: #111d30;
+      padding: 25px;
+      border: 1px solid #26364d;
+      border-radius: 8px;
+    }
+
+    .expertise-card h3 {
+      font-size: 17px;
+      margin-bottom: 10px;
+      color: #dbeafe;
+    }
+
+    .expertise-card p {
+      font-size: 14px;
     }
 
     footer {
-      padding: 30px;
       text-align: center;
+      padding: 30px;
       color: #64748b;
-      border-top: 1px solid #263247;
       font-size: 13px;
+      border-top: 1px solid #1e293b;
     }
 
-    @media (max-width: 600px) {
-      nav {
-        padding: 20px 6%;
-      }
-
-      nav a {
-        margin-left: 10px;
-        font-size: 12px;
-      }
-
+    @media (max-width: 850px) {
       .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
         padding: 65px 7%;
       }
 
-      section {
-        padding: 55px 7%;
+      .intro {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .actions {
+        justify-content: center;
+      }
+
+      .photo-wrap {
+        grid-row: 1;
+      }
+
+      .photo-frame {
+        width: 260px;
+        height: 320px;
+      }
+
+      .expertise {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 65px 7%;
+      }
+    }
+
+    @media (max-width: 550px) {
+      nav {
+        padding: 0 5%;
+        height: 75px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a {
+        font-size: 11px;
+      }
+
+      .logo {
+        font-size: 17px;
+      }
+
+      h1 {
+        letter-spacing: -1px;
       }
     }
   </style>
@@ -132,8 +284,9 @@
 <body>
 
   <nav>
-    <h2>ANOOP P.</h2>
-    <div>
+    <a href="#" class="logo">ANOOP<span>.</span></a>
+
+    <div class="nav-links">
       <a href="#about">About</a>
       <a href="#expertise">Expertise</a>
       <a href="#contact">Contact</a>
@@ -141,49 +294,112 @@
   </nav>
 
   <main>
-    <div class="hero">
-      <div class="eyebrow">Technology • Architecture • Innovation</div>
 
-      <h1>
-        Hello, I'm<br>
-        <span>Anoop Parakkalakath.</span>
-      </h1>
+    <section class="hero">
 
-      <p class="intro">
-        Solution Architect | Enterprise Integration | Digital Transformation
+      <div class="hero-content">
 
-        Turning complex business challenges into scalable,
-        secure and intelligent technology solutions.
-      </p>
+        <div class="eyebrow">
+          ARCHITECTURE · INTEGRATION · INNOVATION
+        </div>
 
-      <a href="#about" class="button">Explore My Portfolio</a>
-    </div>
+        <h1>
+          Anoop<br>
+          <span>Parakkalakath.</span>
+        </h1>
 
-    <section id="about">
+        <div class="headline">
+          Solution Architect | Enterprise Integration |
+          Digital Transformation
+        </div>
+
+        <p class="intro">
+          Translating complex business challenges into
+          scalable technology solutions. Focused on
+          enterprise architecture, API ecosystems,
+          system integration and digital transformation.
+        </p>
+
+        <div class="actions">
+          <a href="#about" class="btn primary">
+            Explore My Profile
+          </a>
+
+          <a href="#contact" class="btn secondary">
+            Get In Touch
+          </a>
+        </div>
+
+      </div>
+
+      <div class="photo-wrap">
+        <div class="photo-frame">
+          <img src="profile.jpg"
+               alt="Anoop Parakkalakath - Professional Portrait">
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-label">Introduction</div>
       <h2>About Me</h2>
+
       <p>
-        I am an IT professional with extensive experience in
-        enterprise integration, API management, solution design
-        and digital transformation.
+        I am an IT professional with over 18 years of
+        experience across enterprise integration,
+        application architecture, API management and
+        technology transformation. My work centres on
+        connecting complex systems, enabling digital
+        services and translating business requirements
+        into sustainable technical solutions.
       </p>
     </section>
 
-    <section id="expertise">
+    <section class="section" id="expertise">
+      <div class="section-label">Capabilities</div>
       <h2>Areas of Expertise</h2>
+
+      <div class="expertise">
+
+        <div class="expertise-card">
+          <h3>Enterprise Integration</h3>
+          <p>
+            Oracle Service Bus, SOAP, REST APIs,
+            system orchestration and interoperability.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>API Management</h3>
+          <p>
+            Azure API Management, API lifecycle,
+            security, governance and integration.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>Solution Architecture</h3>
+          <p>
+            TOGAF principles, solution design,
+            architecture patterns and cloud technologies.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-label">Connect</div>
+      <h2>Let's Connect</h2>
+
       <p>
-        Enterprise Architecture • API Management • Oracle Service Bus
-        • REST & SOAP Integrations • Cloud Architecture
-        • Digital Transformation
+        Open to meaningful conversations around
+        enterprise architecture, integration,
+        technology strategy and digital transformation.
       </p>
     </section>
 
-    <section id="contact">
-      <h2>Let's Connect</h2>
-      <p>
-        Interested in technology, architecture and solving
-        complex enterprise challenges.
-      </p>
-    </section>
   </main>
 
   <footer>
