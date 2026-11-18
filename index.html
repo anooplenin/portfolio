@@ -641,6 +641,29 @@ nav {
   }
 }
 
+    
+/* OFFICIAL TOGAF CREDENTIAL BADGE */
+.credential-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 125px;
+  margin-bottom: 18px;
+  transition: transform 0.3s ease;
+}
+
+.credential-badge:hover {
+  transform: scale(1.06);
+}
+
+.credential-badge img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 
   </style>
 </head>
@@ -768,7 +791,13 @@ nav {
     <div class="certification-grid">
 
       <div class="certification-card">
-        <div class="certification-icon">🏛️</div>
+       <a href="https://www.credly.com/badges/54163bcb-d313-41c4-bcc1-6ebc3b475dd5/public_url"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="credential-badge">
+  <img src="togaf-badge.png"
+       alt="The Open Group TOGAF Standard Version 9.2 certification badge">
+</a>
         <span class="certification-label">ARCHITECTURE FRAMEWORK</span>
         <h3>TOGAF® 9 Certified</h3>
         <p>The Open Group</p>
